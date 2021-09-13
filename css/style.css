@@ -1,0 +1,126 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+html , body
+{
+    width: 100%;
+    height: 100%;
+}
+
+/* ------------------------------------------- */
+
+@font-face {
+    font-family: gameFont;
+    src: url(../resources/fonts/BlackAndWhitePicture-Regular.ttf);
+}
+
+body
+{
+    background: #679436;
+    color: #EBF2FA;
+    font-family: gameFont , sans-serif;
+}
+
+header
+{
+    height: 20%;
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+}
+
+.header-btn
+{
+    border: none;
+    font-family: 'gameFont' , sans-serif;
+    width: 200px;
+    height: 80px;
+    font-size: 50px;
+    border-radius: 9px;
+    cursor: pointer;
+    background: #A5BE00;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 50%);
+}
+
+
+.header-text
+{
+    font-family: 'gameFont' , sans-serif;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+}
+
+
+
+
+/* main */
+main
+{
+    height: 80%;
+}
+
+
+
+/* section: game display  */
+
+.game-display{
+    height: 50%;
+}
+
+.game-display-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px;
+    position: relative;
+}
+
+.game-display-header{
+    font-size: 100px;
+    position: absolute;
+    top: 0;
+}
+
+.game-display-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 16%);
+    background: aliceblue;
+    width: 300px;
+    height: 150px;
+    z-index: 3;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 100px;
+    border-radius: 9px;
+}
+
+.game-display-decoration{
+    height: 6%;
+    width: 100%;
+    background: aliceblue;
+    position: absolute;
+    top: 80%;
+    z-index: 2;
+}
+
+
+
+
+/* section: game mechanics  */
+
+
+
