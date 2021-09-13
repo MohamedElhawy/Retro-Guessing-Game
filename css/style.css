@@ -56,6 +56,7 @@ header
     cursor: pointer;
     background: #A5BE00;
     box-shadow: 0 1px 2px rgb(0 0 0 / 50%);
+    user-select: none;
 }
 
 .header-btn:hover
@@ -189,6 +190,7 @@ main
     box-shadow: 0 1px 2px rgb(0 0 0 / 50%);
     font-family: 'gameFont' , sans-serif;
     cursor: pointer;
+    user-select: none;
 }
 
 .game-mechanics-btn:hover
