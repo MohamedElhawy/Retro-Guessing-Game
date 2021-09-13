@@ -23,6 +23,13 @@ html , body
     src: url(../resources/fonts/BlackAndWhitePicture-Regular.ttf);
 }
 
+
+*:focus
+{
+    outline: none;
+    box-shadow: 0 0 1px 7px #a5be00c7 !important;
+}
+
 body
 {
     background: #679436;
@@ -49,6 +56,11 @@ header
     cursor: pointer;
     background: #A5BE00;
     box-shadow: 0 1px 2px rgb(0 0 0 / 50%);
+}
+
+.header-btn:hover
+{
+    filter: brightness(1.1);
 }
 
 
@@ -90,6 +102,9 @@ main
     font-size: 100px;
     position: absolute;
     top: 0;
+    color: #A5BE00;
+    text-shadow: 0 0 3px black;
+    user-select: none;
 }
 
 .game-display-text{
@@ -106,6 +121,8 @@ main
     padding: 20px;
     font-size: 100px;
     border-radius: 9px;
+    box-shadow: 0 0 3px black;
+    user-select: none;
 }
 
 .game-display-decoration{
@@ -115,20 +132,37 @@ main
     position: absolute;
     top: 80%;
     z-index: 2;
+    box-shadow: 0 0 3px black;
 }
 
 
 
 
 /* section: game mechanics  */
+/* left-side */
 
+.game-mechanics
+{
+    height: 50%;
+}
 
+.game-mechanics-container
+{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 45px;
+}
 
-/* 
+.game-mechanics-left
+{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
 
-
-    box:
-
+.game-mechanics-input
+{
     border: none;
     background: transparent;
     border: 7px solid #A5BE00;
@@ -139,13 +173,12 @@ main
     font-family: 'gameFont' , sans-serif;
     overflow: hidden;
     box-shadow: inset 0 1px 2px rgb(0 0 0 / 50%);
-    padding: 0 25px;
+    text-align: center;
+}
 
-
-
-    btn:
-
-        border: none;
+.game-mechanics-btn
+{
+    border: none;
     margin-top: 15px;
     width: 125px;
     height: 50px;
@@ -155,5 +188,53 @@ main
     background: #A5BE00;
     box-shadow: 0 1px 2px rgb(0 0 0 / 50%);
     font-family: 'gameFont' , sans-serif;
+    cursor: pointer;
+}
 
-*/
+.game-mechanics-btn:hover
+{
+    filter: brightness(1.1);
+}
+
+
+
+
+/* removing input["number"] default style (two arrow up and down) */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] 
+{
+  -moz-appearance: textfield; 
+}
+
+
+.game-mechanics-right
+{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 20px;
+    background: #9ab101;
+    border-radius: 9px;
+}
+
+.game-mechanics-right p
+{
+    width: 300px;
+    height: 50px;
+    background: #8da200;
+    border-radius: 9px;
+    font-size: 32px;
+    color: black;
+}
+
+.game-mechanics-right p span , .game-mechanics-hint
+{
+    color: white !important;
+}
