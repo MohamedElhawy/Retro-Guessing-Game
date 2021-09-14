@@ -306,8 +306,9 @@ input[type=number]
     }
     .game-display-header
     {
-        font-size: 50px;
+        font-size: 40px;
         top: 20%;
+        left: 20%;
     }
     .game-display-text
     {
@@ -343,7 +344,7 @@ input[type=number]
     }
     .game-mechanics-right
     {
-        gap: 5px;
+        gap: 4px;
         padding: 8px;
         justify-content: center;
         height: 80%;
@@ -368,9 +369,9 @@ input[type=number]
     }
     .game-mechanics-right p {
         width: 190px;
-        height: 40px;
+        height: 30px;
         border-radius: 8px;
-        font-size: 27px;
+        font-size: 20px;
     }
 
 }
