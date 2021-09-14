@@ -113,7 +113,7 @@ main
     top: 50%;
     left: 50%;
     transform: translate(-50%, 16%);
-    background: aliceblue;
+    background: #efffd7;
     width: 300px;
     height: 150px;
     z-index: 3;
@@ -129,7 +129,7 @@ main
 .game-display-decoration{
     height: 6%;
     width: 100%;
-    background: aliceblue;
+    background: #efffd7;
     position: absolute;
     top: 80%;
     z-index: 2;
@@ -239,4 +239,10 @@ input[type=number]
 .game-mechanics-right p span , .game-mechanics-hint
 {
     color: white !important;
+}
+
+.game-mechanics-hint
+{
+    padding-left: 10px;
+    padding-top: 3px;
 }
