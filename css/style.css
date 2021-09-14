@@ -308,7 +308,7 @@ input[type=number]
     {
         font-size: 40px;
         top: 20%;
-        left: 20%;
+        font-weight: bold;
     }
     .game-display-text
     {
@@ -368,7 +368,7 @@ input[type=number]
         height: 40px;
     }
     .game-mechanics-right p {
-        width: 190px;
+        width: 165px;
         height: 30px;
         border-radius: 8px;
         font-size: 20px;
